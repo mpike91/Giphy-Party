@@ -19,7 +19,7 @@ async function submitForm(e) {
     if (!gifCollection[searchTerm]) {
         try {
             // Add the giphy API object to the gifCollection object using axios.get
-            gifCollection[searchTerm] = await axios.get(`http://api.giphy.com/v1/gifs/search`, {params: {q: searchTerm, api_key: apiKey}});
+            gifCollection[searchTerm] = await axios.get(`https://api.giphy.com/v1/gifs/search`, {params: {q: searchTerm, api_key: apiKey}});
             // If the returned object has no images in data.data array, then it is an invalid search term. Delete it from the gifCollection object and return alert
             if (!gifCollection[searchTerm].data.data.length) {
                 delete gifCollection[searchTerm];
