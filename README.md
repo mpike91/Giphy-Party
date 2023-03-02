@@ -5,4 +5,4 @@ Giphy API returns 50 images for each search term. This app stores in an object (
 
 Users can remove all images with the Remove Images button. This also clears all keys from the gifCollection object, thus allowing a user to "start fresh."
 
-Practiced basicac layout using Bootstrap. Also made page size-responsive, collapsing the form for small screens into a column.
+Practiced basic layout using Bootstrap. Also made page size-responsive, collapsing the form for small screens into a column.
